@@ -1,0 +1,648 @@
+/**
+ * Main Style
+ * @author zhangjunfa
+ * @date 2018-01-24
+ */
+
+html {
+	height: 100%;
+	font-size: 100px;
+}
+body {
+	background-color: #000000;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 0;
+	font-family: 'Microsoft Yahei';
+	display: none;
+	overflow: hidden;
+	user-select: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a,button,input,textarea {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input {
+	vertical-align: middle;
+}
+textarea {
+	resize: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-table;
+}
+/* Hides from IE-mac */
+*html .clearfix {
+	height: 1%;
+}
+.clearfix { 
+	display: block; 
+}
+/* End hide from IE-mac */
+/* IE6 */
+* html .clearfix {
+	zoom: 1; 
+}
+/* IE7 */
+*:first-child+html .clearfix {
+	zoom: 1; 
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+img, canvas {
+	max-width: 100%;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+}
+video {
+    object-fit: contain;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 6.4rem;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.hide {
+	display: none;
+}
+.iphoneX {
+	position: absolute;
+	width: 6.4rem;
+	height: 12.36rem;
+	left: 0;
+	top: 50%;
+	margin-top: -6.18rem;
+}
+.horview {
+	position: absolute;
+	width: 12.36rem;
+	height: 6.4rem;
+	left: 6.4rem;
+	top: 50%;
+	margin-top: -6.18rem;
+	transform-origin: 0% 0% 0;
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0% 0% 0;
+	-webkit-transform: rotate(90deg);
+}
+.page-body {
+	display: none;
+}
+#forhorview {
+	background: #0A0504 url(../images/forhorview.jpg) no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	z-index: 9999;
+}
+
+/**
+ * Loading
+ */
+.loading {
+	background: url(../images/loading_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.percent-text {
+	background: url(../images/percent_text.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 1rem;
+	left: 0;
+	top: 5.8rem;
+}
+.percent {
+	position: absolute;
+	width: 0.85rem;
+	height: 0.36rem;
+	left: 2.78rem;
+	top: 6.77rem;
+	font-size: 0.16rem;
+	color: #F26A6A;
+	text-align: center;
+	line-height: 0.36rem;
+}
+.percent span {
+	font-size: 0.2rem;
+}
+
+/**
+ * Common
+ */
+.music-btn {
+	position: absolute;
+	width: 0.42rem;
+	height: 0.42rem;
+	left: 5.75rem;
+	top: 1.18rem;
+}
+.music-btn.forhorview {
+	left: 1.32rem;
+	top: 0.21rem;
+}
+.music-btn.on {
+	background: url(../images/music_on_btn.png) no-repeat;
+	background-size: 100% auto;
+}
+.music-btn.off {
+	background: url(../images/music_off_btn.png) no-repeat;
+	background-size: 100% auto;
+}
+
+/**
+ * Home
+ */
+.home {
+	background: url(../images/page1_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.home.special {
+	background: url(../images/page1_bg2.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.slogan {
+	background: url(../images/slogan.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.tips {
+	background: url(../images/tips.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.2rem;
+	height: 1rem;
+	left: 2.6rem;
+	top: 10.3rem;
+}
+
+/**
+ * Video
+ */
+.video-control {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.video-control .video-pic {
+	background: url(../images/video_pic.jpg) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.video-control .video-btn {
+	position: absolute;
+	width: 2.1rem;
+	height: 2rem;
+	left: 5.12rem;
+	top: 2.22rem;
+}
+.video-control .video-btn.play {
+	background: url(../images/play_btn.png) no-repeat;
+	background-size: 100% auto;
+}
+.video-control .video-btn.pause {
+	background: url(../images/pause_btn.png) no-repeat;
+	background-size: 100% auto;
+}
+.video-tips {
+	background: url(../images/video_tips.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1rem;
+	height: 1.2rem;
+	left: 10.3rem;
+	top: 2.6rem;
+}
+
+/**
+ * Card Style
+ */
+.card-style {
+	background: url(../images/page3_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.card-style .tree-1 {
+	background: url(../images/tree_1.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.67rem;
+	height: 3.27rem;
+	left: 0;
+	top: 1.87rem;
+	opacity: 0;
+}
+.card-style .tree-2 {
+	background: url(../images/tree_2.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.7rem;
+	height: 2.72rem;
+	right: 0;
+	top: 3.01rem;
+	opacity: 0;
+}
+.card-style .clapboard {
+	background: url(../images/clapboard.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.card-style .huba {
+	background: url(../images/huba.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.5rem;
+	height: 3rem;
+	left: 0;
+	top: 3.4rem;
+	opacity: 0;
+}
+.card-style .signboard {
+	background: url(../images/signboard.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.4rem;
+	height: 1.2rem;
+	left: 4.1rem;
+	top: 0.4rem;
+}
+.card-style .card-1 {
+	background: url(../images/card_1.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 2.1rem;
+	height: 3.8rem;
+	left: 4.05rem;
+	top: 1.65rem;
+	opacity: 0;
+}
+.card-style .card-2 {
+	background: url(../images/card_2.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 2.1rem;
+	height: 3.8rem;
+	left: 6.57rem;
+	top: 1.65rem;
+	opacity: 0;
+}
+.card-style .register {
+	position: absolute;
+	width: 0.78rem;
+	height: 2.7rem;
+	left: 8.85rem;
+	top: 1.81rem;
+	display: none;
+}
+.register-btn {
+	position: absolute;
+	width: 0.78rem;
+	height: 2.7rem;
+	left: 0;
+	top: 0;
+}
+.register .student,
+.register .worker {
+	background-color: transparent;
+	position: absolute;
+	width: 0.78rem;
+	height: 1.3rem;
+	left: 0;
+	z-index: 100;
+}
+.register .student {
+	top: 0;
+}
+.register .worker {
+	bottom: 0;
+}
+
+/**
+ * Introduction
+ */
+.card-introduction {
+	background: url(../images/page4_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.card-introduction .title {
+	background: url(../images/page4_title.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 2.69rem;
+	height: 0.9rem;
+	left: 1.86rem;
+	top: 1.56rem;
+	opacity: 0;
+}
+.card-introduction .description {
+	background: url(../images/page4_description.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 3.75rem;
+	height: 1.8rem;
+	left: 1.36rem;
+	top: 2.62rem;
+	opacity: 0;
+}
+.card-introduction .register {
+	position: absolute;
+	width: 0.78rem;
+	height: 2.7rem;
+	left: 5.42rem;
+	top: 8.2rem;
+	display: none;
+}
+
+/**
+ * Coupon
+ */
+.page5-1 .coupon {
+	background: url(../images/page5_1_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.page5-1 .description {
+	background: url(../images/page5_description.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.35rem;
+	height: 1.12rem;
+	left: 1.02rem;
+	top: 3.14rem;
+	opacity: 0;
+}
+.page5-1 .mon {
+	background: url(../images/mon.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.7rem;
+	height: 1.81rem;
+	left: 0.91rem;
+	top: 4.5rem;
+	opacity: 0;
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.page5-1 .tues {
+	background: url(../images/tues.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.74rem;
+	height: 1.81rem;
+	left: 0.76rem;
+	top: 6.68rem;
+	opacity: 0;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.page5-1 .wed {
+	background: url(../images/wed.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.68rem;
+	height: 1.82rem;
+	left: 0.91rem;
+	top: 8.86rem;
+	opacity: 0;
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+.page5-1 .register,
+.page5-2 .register {
+	position: absolute;
+	width: 0.78rem;
+	height: 2.7rem;
+	left: 5.42rem;
+	top: 8.2rem;
+	display: none;
+}
+
+.page5-2 .coupon {
+	background: url(../images/page5_2_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.page5-2 .thur {
+	background: url(../images/thur.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.74rem;
+	height: 1.78rem;
+	left: 0.76rem;
+	top: 1.98rem;
+	opacity: 0;
+}
+.page5-2 .fri {
+	background: url(../images/fri.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.74rem;
+	height: 1.82rem;
+	left: 0.91rem;
+	top: 4.19rem;
+	opacity: 0;
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.page5-2 .sat {
+	background: url(../images/sat.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.74rem;
+	height: 1.79rem;
+	left: 0.76rem;
+	top: 6.4rem;
+	opacity: 0;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.page5-2 .sun {
+	background: url(../images/sun.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.68rem;
+	height: 1.83rem;
+	left: 0.91rem;
+	top: 8.61rem;
+	opacity: 0;
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+
+/**
+ * Interests
+ */
+.page6 .content {
+	background: url(../images/page6_bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.page6 .content.special {
+	background: url(../images/page6_bg2.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.page6 .register {
+	position: absolute;
+	width: 0.78rem;
+	height: 2.7rem;
+	left: 5.42rem;
+	top: 8.2rem;
+	display: none;
+}
+
+/**
+ * iphoneX
+ */
+@media screen and (width: 375px) and (min-height: 724px) {
+	
+}
+
+/**
+ * Animation
+ */
+.zTip {
+	-webkit-animation: zTip 1s 0s infinite ease both;
+}
+@-webkit-keyframes zTip{
+	0%{
+		-webkit-transform:translateY(0rem);
+	}
+	100%{
+		-webkit-transform:translateY(-0.2rem);
+	}
+}
+.zVideoTip {
+	-webkit-animation: zVideoTip 1s 0s infinite ease both;
+}
+@-webkit-keyframes zVideoTip{
+	0%{
+		-webkit-transform:translateX(0rem);
+	}
+	100%{
+		-webkit-transform:translateX(-0.2rem);
+	}
+}
+
+.zFadeIn{
+	-webkit-animation: zFadeIn 0.5s 0s linear both;
+}
+@-webkit-keyframes zFadeIn {
+	0%{
+		opacity: 0;
+	} 
+	100%{
+		opacity: 1;
+	} 
+}
+
+.fadeInUp {
+	-webkit-animation: fadeInUp 0.5s 0s ease both;
+	-moz-animation: fadeInUp 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInUp{
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(20px);
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0);
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation:fadeInLeft 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInLeft {
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(-20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateX(0)
+	}
+}
+
+.fadeInRight {
+	-webkit-animation:fadeInRight 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInRight {
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateX(0)
+	}
+}
+
+.fadeInUp {
+	-webkit-animation:fadeInUp 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInUp {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(-20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0)
+	}
+}
+
+.fadeInDown {
+	-webkit-animation:fadeInDown 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInDown {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0)
+	}
+}
